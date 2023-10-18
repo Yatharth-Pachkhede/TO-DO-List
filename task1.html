@@ -4,52 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://github.com/Yatharth-Pachkhede/TO-DO-List/blob/main/task1_style.css">
-    <title>task1</title>
+    <link rel="stylesheet" href="/F:/YatharthData/html/task3_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Task3</title>
 </head>
 <body>
     <div class="head">
-        Working Calculator
+        To Do List Webapp
     </div>
     <hr>
     <hr>
-    <div class="container">
-        <div class="calculator">
-            <form>
-                <div class="display"> 
-                    <input type="text" name="display" >
-                </div>
-                <div>
-                    <input type="button" value="AC"  class="op" onclick="display.value = '' ">
-                    <input type="button" value="DE"  class="op" onclick="display.value = display.value.toString().slice(0,-1) ">
-                    <input type="button" value="." class="operator" onclick="display.value += '.' ">
-                    <input type="button" value="/" class="operator" onclick="display.value += '/' ">
-                </div>
-                <div>
-                    <input type="button" value="7" onclick="display.value += '7' ">
-                    <input type="button" value="8" onclick="display.value += '8' ">
-                    <input type="button" value="9" onclick="display.value += '9' ">
-                    <input type="button" value="*" class="operator" onclick="display.value += '*' ">
-                </div>
-                <div>
-                    <input type="button" value="4" onclick="display.value += '4' ">
-                    <input type="button" value="5" onclick="display.value += '5' ">
-                    <input type="button" value="6" onclick="display.value += '6' ">
-                    <input type="button" value="-" class="operator" onclick="display.value += '-' ">
-                </div>
-                <div>
-                    <input type="button" value="1" onclick="display.value += '1' ">
-                    <input type="button" value="2" onclick="display.value += '2' ">
-                    <input type="button" value="3" onclick="display.value += '3' ">
-                    <input type="button" value="+" class="operator" onclick="display.value += '+' ">
-                </div>
-                <div>
-                    <input type="button" value="00" onclick="display.value += '00' ">
-                    <input type="button" value="0" onclick="display.value += '0' ">
-                    <input type="button" value="=" class="equal" onclick="display.value = eval(display.value) ">
-                </div>
-            </form>
-        </div>
+
+    <form action="">
+
+        <input type="text" class="todo-input" placeholder="ADD ITEM">
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-circle fa-lg"></i>
+        </button>
+    </form>
+
+    <div class="todo-container">
+        <p class="p">ITEMS:</p>
+        <ul class="todo-list"></ul>
     </div>
+
+    <script src="task3_script.js"></script>
 </body>
 </html>
