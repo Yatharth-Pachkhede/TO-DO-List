@@ -1,3 +1,3 @@
-# TO-DO-List
+# Functional Calculator
 
-Created TO-DO List using HTML and CSS 
+Created Functional Calculator using HTML and CSS 
